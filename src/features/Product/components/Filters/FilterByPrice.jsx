@@ -80,9 +80,17 @@ function FilterByPrice({onChange ,filters= {} }) {
     return (
         <Box className={classes.root}>
             <Typography variant="subtitle2">GIÁ</Typography>
-            <span className={classes.span} onClick={handleClickSpan1}>Trên 50.000</span>
-            <span className={classes.span} onClick={handleClickSpan2}>Từ 50.000 - 500.000</span>
-            <span className={classes.span} onClick={handleClickSpan3}>Trên 500.000</span>
+            <div>
+                <span className={classes.span} onClick={handleClickSpan1}>Trên 50.000</span>
+            </div>
+            <div>
+                <span className={classes.span} onClick={handleClickSpan2}>Từ 50.000 - 500.000</span>
+            </div>
+            <div>
+                 <span className={classes.span} onClick={handleClickSpan3}>Trên 500.000</span>
+            </div>
+            
+           
 
 
             <Box className={classes.flex}>
@@ -91,7 +99,7 @@ function FilterByPrice({onChange ,filters= {} }) {
                 <TextField className={classes.input} variant="standard" name="salePrice_lte" value={values.salePrice_lte} onChange={handleChange}/>
             </Box>
 
-            <Button variant="outlined" color="primary" onClick={handleSubmit}>Áp Dụng</Button>
+            <Button  variant="outlined" color="primary" onClick={handleSubmit}>Áp Dụng</Button>
         </Box>
     );
 }

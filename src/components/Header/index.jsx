@@ -84,16 +84,12 @@ export default function Header() {
           <CodeIcon />
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link className={classes.link} to="/">
+            <Link className={classes.link} to="/products">
               Ez Shop
             </Link>
           </Typography>
-
-          <NavLink className={classes.link} to="/todos">
-            <Button color="inherit">Todos </Button>
-          </NavLink>
-          <NavLink className={classes.link} to="/albums">
-            <Button color="inherit">Albums</Button>
+          <NavLink className={classes.link} to="/products">
+            <Button color="inherit">Product</Button>
           </NavLink>
           { !isLoggedIn && ( 
             <Button color="inherit" onClick={handleClickOpen}>Login</Button>
