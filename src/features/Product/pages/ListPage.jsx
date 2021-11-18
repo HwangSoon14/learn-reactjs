@@ -1,17 +1,17 @@
-import Pagination from '@mui/material/Pagination';
 import { Container, Grid, Paper } from '@mui/material';
+import Pagination from '@mui/material/Pagination';
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
-import {useHistory , useLocation} from 'react-router'
-import queryString from 'query-string'
-import React, { useEffect, useMemo, useState  } from 'react';
+import queryString from 'query-string';
+import React, { useEffect, useMemo, useState } from 'react';
+import { useHistory, useLocation } from 'react-router';
 import productApi from '../../../API/productApi';
+import FilterViewer from '../components/FilterViewer';
+import ProductFilters from '../components/ProductFilters';
 import ProductList from '../components/ProductList';
 import ProductSkeletonList from '../components/ProductSkeletonList';
-import ProductSort from '../components/ProductSort';
-import ProductFilters from '../components/ProductFilters';
 import ProductSkeletonText from '../components/ProductSkeletonText';
-import FilterViewer from '../components/FilterViewer';
+import ProductSort from '../components/ProductSort';
 
 const useStyles = makeStyles(theme => ({
     root: {},

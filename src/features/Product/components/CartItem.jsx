@@ -97,6 +97,7 @@ function CartItem({item}) {
         if(quantity > 1) {
             --quantity;
         }
+        console.log(quantity)
         const action = setQuantity({
             id: item.id,
             quantity: quantity,
@@ -108,6 +109,7 @@ function CartItem({item}) {
     const handleIncrease = () => {
         let quantity = item.quantity;
         ++quantity;
+        console.log("item id :",item.id)
         const action = setQuantity({
             id: item.id,
             quantity: quantity,
@@ -151,7 +153,6 @@ function CartItem({item}) {
                     <div className={classes.garbage} onClick={handleGarbageClick}>
                         <img src={urlGarbage} alt="garbage-img" />
                     </div>
-                    {console.log(item)}
             </Box>
         </Box>
     );
