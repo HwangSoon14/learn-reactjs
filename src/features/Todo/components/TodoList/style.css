@@ -1,0 +1,11 @@
+.todo-list li {
+  cursor: pointer;
+}
+
+.todo-list > li.completed {
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
