@@ -83,7 +83,7 @@ function FilterByPrice({onChange ,filters= {} }) {
         onChange({salePrice_gte: 500000 , salePrice_lte:25000000});
     }
     return (
-        <Box className={classes.root}>
+        <div className={classes.root}>
             <Typography variant="subtitle2">GIÁ</Typography>
             <div>
                 <span className={classes.span} onClick={handleClickSpan1}>Trên 50.000</span>
@@ -105,7 +105,7 @@ function FilterByPrice({onChange ,filters= {} }) {
             </Box>
 
             <Button className={classes.width} variant="outlined" color="primary" onClick={handleSubmit}>Áp Dụng</Button>
-        </Box>
+        </div>
     );
 }
 
