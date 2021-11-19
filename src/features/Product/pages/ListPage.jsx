@@ -114,7 +114,7 @@ function ListPage(props) {
                 <Grid container spacing={1}>
                     <Grid item className={classes.left}>
                         <Paper elevation={0}>
-                            {loading ? <ProductSkeletonText length={7} /> : <ProductFilters filters={queryParams} onChange={handleFiltersChange} />}
+                            {loading ? <ProductSkeletonText length={12} /> : <ProductFilters filters={queryParams} onChange={handleFiltersChange} />}
                             
                         </Paper>
                     </Grid>
