@@ -8,7 +8,9 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(theme => ({
     root: {
         padding: '20px 0 10px 20px',
-        borderTop: '2px solid #eee'
+        borderTop: '2px solid #eee',
+        display: 'flex',
+        flexDirection: 'column'
     },
     flex: {
         display: 'flex',
@@ -39,6 +41,9 @@ const useStyles = makeStyles(theme => ({
             
         }
     },
+    width: {
+        maxWidth: '120px'
+    }
 }))
 
 FilterByPrice.propTypes = {
@@ -99,7 +104,7 @@ function FilterByPrice({onChange ,filters= {} }) {
                 <TextField className={classes.input} variant="standard" name="salePrice_lte" value={values.salePrice_lte} onChange={handleChange}/>
             </Box>
 
-            <Button  variant="outlined" color="primary" onClick={handleSubmit}>Áp Dụng</Button>
+            <Button className={classes.width} variant="outlined" color="primary" onClick={handleSubmit}>Áp Dụng</Button>
         </Box>
     );
 }
